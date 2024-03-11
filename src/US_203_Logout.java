@@ -28,7 +28,7 @@ import org.testng.annotations.Test;
             aksiyon.moveToElement(logout).click().build().perform();
 
             WebElement confirm=driver.findElement(By.xpath(" //a[text()='Register']"));
-            Assert.assertTrue(confirm.getText().contains("Register"),"Çıkış yapılamadı");
+            Assert.assertTrue(confirm.getText().contains("Register"),"Çıkış yapılamadı maalesef");
 
 
 
