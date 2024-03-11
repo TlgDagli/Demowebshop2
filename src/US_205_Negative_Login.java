@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 public class US_205_Negative_Login extends BaseDriver {
     @Test
     public void US205(){
-
         driver.get("https://demowebshop.tricentis.com/");
         Actions action = new Actions(driver);
         WebElement logIn1 = driver.findElement(By.xpath("//*[text()='Log in']"));
