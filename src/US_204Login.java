@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class US_204Login extends BaseDriver {
 
     @Test
-    public void  Us204(){
+    public  void  Us204(){
         WebElement Login=driver.findElement(By.xpath("//a[text()='Log in']"));
         Actions aksiyon=new Actions(driver);
 
