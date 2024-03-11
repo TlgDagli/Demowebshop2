@@ -44,5 +44,6 @@ public class US_205_Negative_Login extends BaseDriver {
         WebElement incorrectEmailPassword=driver.findElement(By.xpath("//li[text()='No customer account found']"));
         Assert.assertTrue(incorrectEmailPassword.getText().equals("No customer account found"));
         WaitClose();
+
     }
 }
