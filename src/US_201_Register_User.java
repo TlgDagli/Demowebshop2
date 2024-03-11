@@ -16,11 +16,11 @@ public class US_201_Register_User extends BaseDriver {
         WebElement male = driver.findElement(By.id("gender-male"));
         aksiyonlar.moveToElement(male).click().build().perform();
         WebElement first = driver.findElement(By.id("FirstName"));
-        aksiyonlar.moveToElement(first).click().sendKeys("Sdet3").build().perform();
+        aksiyonlar.moveToElement(first).click().sendKeys("Sdet").build().perform();
         WebElement last = driver.findElement(By.id("LastName"));
-        aksiyonlar.moveToElement(last).click().sendKeys("Tears4").build().perform();
+        aksiyonlar.moveToElement(last).click().sendKeys("Tears").build().perform();
         WebElement email = driver.findElement(By.id("Email"));
-        aksiyonlar.moveToElement(email).click().sendKeys("sdettears2@gmail.com").build().perform();
+        aksiyonlar.moveToElement(email).click().sendKeys("sdettears@gmail.com").build().perform();
         WebElement pass = driver.findElement(By.id("Password"));
         aksiyonlar.moveToElement(pass).click().sendKeys("Pass1234").build().perform();
         WebElement cpass = driver.findElement(By.id("ConfirmPassword"));
