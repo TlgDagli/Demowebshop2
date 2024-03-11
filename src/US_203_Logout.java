@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
         @Test
         public void  Us204(){
-            driver.get("https://demowebshop.tricentis.com/");
             WebElement Login=driver.findElement(By.xpath("//a[text()='Log in']"));
             Actions aksiyon=new Actions(driver);
 
