@@ -8,26 +8,26 @@ import org.testng.annotations.Test;
 
 public class US_201_Register_User extends BaseDriver {
     @Test
-    public void Register(){
+    public void Register() {
         driver.get("https://demowebshop.tricentis.com/");
-        Actions aksiyonlar=new Actions(driver);
-        WebElement register= driver.findElement(By.xpath("//a[text()='Register']"));
+        Actions aksiyonlar = new Actions(driver);
+        WebElement register = driver.findElement(By.xpath("//a[text()='Register']"));
         aksiyonlar.moveToElement(register).click().build().perform();
-        WebElement male= driver.findElement(By.id("gender-male"));
+        WebElement male = driver.findElement(By.id("gender-male"));
         aksiyonlar.moveToElement(male).click().build().perform();
-        WebElement first= driver.findElement(By.id("FirstName"));
-        first.sendKeys("Sdet");
-        WebElement last= driver.findElement(By.id("LastName"));
-        last.sendKeys("Tears");
-        WebElement email= driver.findElement(By.id("Email"));
-        email.sendKeys("sdettears@gmail.com");
-        WebElement pass= driver.findElement(By.id("Password"));
-        pass.sendKeys("Pass1234");
-        WebElement cpass= driver.findElement(By.id("ConfirmPassword"));
-        cpass.sendKeys("Pass1234");
-        WebElement rbtn= driver.findElement(By.id("register-button"));
+        WebElement first = driver.findElement(By.id("FirstName"));
+        aksiyonlar.moveToElement(first).click().sendKeys("Sdet3").build().perform();
+        WebElement last = driver.findElement(By.id("LastName"));
+        aksiyonlar.moveToElement(last).click().sendKeys("Tears4").build().perform();
+        WebElement email = driver.findElement(By.id("Email"));
+        aksiyonlar.moveToElement(email).click().sendKeys("sdettears2@gmail.com").build().perform();
+        WebElement pass = driver.findElement(By.id("Password"));
+        aksiyonlar.moveToElement(pass).click().sendKeys("Pass1234").build().perform();
+        WebElement cpass = driver.findElement(By.id("ConfirmPassword"));
+        aksiyonlar.moveToElement(cpass).click().sendKeys("Pass1234").build().perform();
+        WebElement rbtn = driver.findElement(By.id("register-button"));
         aksiyonlar.moveToElement(rbtn).click().build().perform();
-        WebElement control= driver.findElement(By.xpath("//div[@class='result']"));
+        WebElement control = driver.findElement(By.xpath("//div[@class='result']"));
         Assert.assertTrue(control.getText().contains("completed"));
         WaitClose();
 
