@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 public class US_201_Register_User extends BaseDriver {
     @Test
     public void Register() {
-        driver.get("https://demowebshop.tricentis.com/");
         Actions aksiyonlar = new Actions(driver);
         WebElement register = driver.findElement(By.xpath("//a[text()='Register']"));
         aksiyonlar.moveToElement(register).click().build().perform();
