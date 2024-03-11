@@ -43,19 +43,19 @@ public class US_202_Negative_Register_User extends BaseDriver {
         aksiyonlar.moveToElement(male).click().build().perform();
 
         WebElement firstName= driver.findElement(By.xpath("//*[@id='FirstName']"));
-        aksiyonlar.moveToElement(firstName).sendKeys("Sdet3").build().perform();
+        aksiyonlar.moveToElement(firstName).click().sendKeys("Sdet3").build().perform();
 
         WebElement lastName= driver.findElement(By.xpath("//*[@id='LastName']"));
-        aksiyonlar.moveToElement(lastName).sendKeys("Tears4").build().perform();
+        aksiyonlar.moveToElement(lastName).click().sendKeys("Tears4").build().perform();
 
         WebElement email= driver.findElement(By.xpath("//*[@id='Email']"));
-        aksiyonlar.moveToElement(email).sendKeys("sdettears2@gmail.com").build().perform();
+        aksiyonlar.moveToElement(email).click().sendKeys("sdettears2@gmail.com").build().perform();
 
         WebElement password= driver.findElement(By.xpath("//*[@id='Password']"));
-        aksiyonlar.moveToElement(password).sendKeys("Pass1234").build().perform();
+        aksiyonlar.moveToElement(password).click().sendKeys("Pass1234").build().perform();
 
         WebElement confirmPassword= driver.findElement(By.xpath("//*[@id='ConfirmPassword']"));
-        aksiyonlar.moveToElement(confirmPassword).sendKeys("Pass1234").build().perform();
+        aksiyonlar.moveToElement(confirmPassword).click().sendKeys("Pass1234").build().perform();
 
         WebElement RegisterButton= driver.findElement(By.xpath("//*[@id='register-button']"));
         aksiyonlar.moveToElement(RegisterButton).click().build().perform();
